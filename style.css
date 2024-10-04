@@ -1,422 +1,413 @@
 @font-face {
-    font-family: "PacificoFontRegular";
-    src: url("./assets/fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LobsterFontRegular';
+  src: url('./assets/fonts/Lobster/Lobster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-.pacifico-regular{
-    font-family: "PacificoFontRegular";
+:root {
+  --font-family-primary: 'LobsterFontRegular', sans-serif;
+  --color-primary: rgb(173, 31, 31);
+  --color-secondary: rgb(3, 65, 3);
+  --color-background-button: greenyellow;
+  --color-background-1: aquamarine;
+  --color-background-2: whitesmoke;
+  --color-background-3: green;
+  --color-background-4: rgb(201, 198, 198);
+  --color-outline: rgb(0, 255, 13);
 }
-@font-face {
-    font-family: "ShadowsILFontRegular";
-    src: url("./assets/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+
+* {
+  /*outline: 1px solid red;*/
+  font-family: var(--font-family-primary);
 }
-.pacifico-regular{
-    font-family: "ShadowsILFontRegular";
+.header-layout {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(./assets/images/verduras2.jpg);
+  position: fixed;
+  font-family: var(--font-family-primary);
 }
-@font-face {
-    font-family: "LobsterFontRegular";
-    src: url("./assets/fonts/Lobster/Lobster-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+.header-box {
+  width: 97%;
+  height: 170px;
+  background-color: var(--color-background-1);
+  opacity: 0.9;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
 }
-.pacifico-regular{
-    font-family: "LobsterFontRegular";
+.separation-header {
+  height: 200px;
 }
-*{
-    /*outline: 1px solid red;*/
-    font-family: "LobsterFontRegular", sans-serif;
+.fruits-general {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
 }
-.header-layout{
-    width:100%;
-    height: 230px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-image: url(./assets/images/verduras2.jpg);
-    position:fixed;
-    font-family: "LobsterFontRegular", sans-serif;
+.vegetables-general {
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
+  height: 200px;
 }
-.header-box{
-    width:97%;
-    height: 170px;
-    background-color: aquamarine;
-    opacity: 0.9;
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    position:fixed;    
+.img-general {
+  width: 100px;
+  height: 100px;
 }
-.separation-header{
-    height: 200px;
+.title-web {
+  font-size: 5em;
+  color: var(--color-primary);
 }
-.fruits-general{
-    display: flex;
-    justify-content: space-around;
-    height: 200px;
+.general-menu {
+  font-size: 1.8em;
+  color: var(--color-secondary);
 }
-.vegetables-general{
-    display: flex;
-    justify-content: space-around;
-    align-items:normal;
-    height: 200px;
-}
-.img-general{
-    width: 100px;
-    height: 100px;
-}
-.title-web{
-    font-size: 5em;
-    color: rgb(173, 31, 31);
-}
-.general-menu{
-    font-size: 1.8em;
-    color: rgb(3, 65, 3);
-}
-.general-menu:hover{
-    background-color: green;
-    font-size: 2.5em;
-    border-radius: 7%;
-    text-decoration:none;
+.general-menu:hover {
+  background-color: var(--color-background-3);
+  font-size: 2.5em;
+  border-radius: 7%;
+  text-decoration: none;
 }
 .title-section-fruits {
-    height: 100px;
-    width: 200px;
-    color: green;
-    align-items: end;
-    font-size: 5em;
+  height: 100px;
+  width: 200px;
+  color: var(--color-background-3);
+  align-items: end;
+  font-size: 5em;
 }
-.title-section-vegetables{
-    height: 100px;
-    width: 300px;
-    color: green;
-    align-items: end;
-    font-size: 5em;
+.title-section-vegetables {
+  height: 100px;
+  width: 300px;
+  color: var(--color-background-3);
+  align-items: end;
+  font-size: 5em;
 }
 .section-fruits {
-    font-family: "LobsterFontRegular";
-    display:flex;  
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 700px;
+  font-family: var(--font-family-primary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 700px;
 }
-.section-vegetables{
-    font-family: "LobsterFontRegular";
-    display:flex;  
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    height: 700px;
+.section-vegetables {
+  font-family: var(--font-family-primary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 700px;
 }
 .fruit-container {
-    display:flex; 
-    
+  display: flex;
 }
-.type-fruit{
+.type-fruit {
+  margin-top: 20px;
+  font-size: 2em;
+  width: 150px;
+  background-color: var(--color-background-2);
+}
+.type-vegetables {
+  margin-top: 20px;
+  font-size: 2em;
+  width: 150px;
+  background-color: var(--color-background-2);
+}
+.box1 {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid var(--color-outline);
+}
+.box2 {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid var(--color-outline);
+}
+.box3 {
+  width: 150px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: var(--color-background-4);
+}
+.box4 {
+  width: 400px;
+  margin: 30px;
+  padding: 20px;
+}
+.img-fruits,
+.img-vegetables {
+  width: 150px;
+  height: 150px;
+}
+.social {
+  width: 48px;
+  height: 48px;
+  padding: 1px;
+  border-radius: 30%;
+}
+.social:hover {
+  width: 100px;
+  height: 100px;
+}
+.social-img {
+  display: flex;
+  justify-content: center;
+}
+.social-text {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+  padding-right: 20px;
+}
+.et_pb_bottom_inside_d {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2Q4ZTFkOCI+PHBhdGggZD0iTTMyMCAyOGMzMjAgMCAzMjAgODQgNjQwIDg0IDE2MCAwIDI0MC0yMSAzMjAtNDJ2NzBIMFY3MGM4MC0yMSAxNjAtNDIgMzIwLTQyeiIvPjwvZz48L3N2Zz4=);
+  background-size: 50% 60px;
+  margin-top: 70px;
+  height: 60px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.button-selection:hover {
+  background-color: var(--color-background-button);
+}
+@media screen and (max-width: 515px) {
+  .title-web {
+    font-size: 1.5em;
+  }
+  .header-layout {
+    position: static;
+  }
+  .header-box {
+    width: 90%;
+    height: auto;
+    opacity: 1;
+    flex-direction: column;
+    position: static;
+  }
+  .general-menu {
+    font-size: 1em;
+  }
+  .general-menu:hover {
+    font-size: 1.5em;
+  }
+  .separation-header {
+    height: 0px;
+  }
+  .fruits-general {
+    height: 60px;
+  }
+  .vegetables-general {
+    height: 60px;
+  }
+  .img-general {
+    width: 50px;
+    height: 50px;
+  }
+  .title-section-fruits {
+    height: auto;
+    width: auto;
+    font-size: 1.5em;
+  }
+  .title-section-vegetables {
+    height: auto;
+    width: auto;
+    font-size: 1.5em;
+  }
+  .section-fruits {
+    height: auto;
+  }
+  .section-vegetables {
+    height: auto;
+  }
+  .fruit-container {
+    display: flex;
+  }
+  .type-fruit {
     margin-top: 20px;
     font-size: 2em;
     width: 150px;
-    background-color: whitesmoke;
-}
-.type-vegetables{
+  }
+  .type-vegetables {
     margin-top: 20px;
-    font-size: 2em;
+    font-size: 12em;
     width: 150px;
-    background-color: whitesmoke;
-}
-.box1{
-    width:200px;
-    margin:10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline: 1px solid rgb(0, 255, 13);
-}
-.box2{
-    width:200px;
-    margin:10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline: 1px solid rgb(0, 255, 13);
-}
-.box3{
-    width:150px;
-    margin:20px;
-    padding: 20px;
+  }
+  .box1 {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.7em;
+  }
+  .box2 {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.7em;
+  }
+  .box3 {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    background-color: rgb(201, 198, 198);
-}
-.box4{
-    width:400px;
-    margin: 30px;
-    padding: 20px;
-}
-.img-fruits, .img-vegetables{
-    width: 150px;
-    height: 150px;
-}
-.social{
+  }
+  .img-fruits,
+  .img-vegetables {
+    width: 50px;
+    height: 50px;
+  }
+  .social:hover {
     width: 48px;
     height: 48px;
-    padding: 1px;
-    border-radius: 30%;
-}
-.social:hover{
-    width: 100px;
-    height: 100px;
-}
-.social-img{
+  }
+  .social-img {
     display: flex;
-    justify-content: center;
-}
-.social-text{
-    width: 300px;
-    display: flex;
-    justify-content: center;
-}
-.social-links{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 10px;
-    padding-right: 20px;
-}
-.et_pb_bottom_inside_d {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSI1MHB4IiB2aWV3Qm94PSIwIDAgMTI4MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI2Q4ZTFkOCI+PHBhdGggZD0iTTMyMCAyOGMzMjAgMCAzMjAgODQgNjQwIDg0IDE2MCAwIDI0MC0yMSAzMjAtNDJ2NzBIMFY3MGM4MC0yMSAxNjAtNDIgMzIwLTQyeiIvPjwvZz48L3N2Zz4=);
-    background-size: 50% 60px;
-    margin-top: 70px;
-    height: 60px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.button-selection:hover{
-    background-color: greenyellow;
-}
-@media screen and (max-width:515px){
-    .title-web{
-        font-size: 1.5em;
-    }
-    .header-layout{
-        position:static;
-    }
-    .header-box{
-        width:90%;
-        height: auto;
-        opacity: 1;
-        flex-direction: column;
-        position:static;
-    }
-    .general-menu{
-        font-size: 1em;
-    }
-    .general-menu:hover{  
-        font-size: 1.5em;
-    }
-    .separation-header{
-        height: 0px;
-    }
-    .fruits-general{
-        height: 60px;
-    }
-    .vegetables-general{
-        height: 60px;
-    }
-    .img-general{
-        width: 50px;
-        height: 50px;
-    }
-    .title-section-fruits {
-        height: auto;
-        width: auto;
-        font-size: 1.5em;
-    }
-    .title-section-vegetables{
-        height: auto;
-        width: auto;
-        font-size: 1.5em;
-    }
-    .section-fruits {
-        height: auto;
-    }
-    .section-vegetables{
-        height: auto;
-    }
-    .fruit-container {
-        display:flex; 
-        
-    }
-    .type-fruit{
-        margin-top: 20px;
-        font-size: 2em;
-        width: 150px;
-    }
-    .type-vegetables{
-        margin-top: 20px;
-        font-size: 12em;
-        width: 150px;
-    }
-    .box1{
-        width:auto;
-        margin:5px;
-        padding: 5px;
-        font-size: 0.7em;
-    }
-    .box2{
-        width:auto;
-        margin:5px;
-        padding: 5px;
-        font-size: 0.7em;
-    }
-    .box3{
-        width:auto;
-        margin:5px;
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .img-fruits, .img-vegetables{
-        width: 50px;
-        height: 50px;
-    }
-    .social:hover{
-        width: 48px;
-        height: 48px;
-    }
-    .social-img{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .social-text{
-        font-size: 1em;
-    }
-    .et_pb_bottom_inside_d {
-        background-size: 90% 30px;
-        margin-top: 10px;
-        height: 30px;
-        margin-bottom: 5px;
-        width: auto;
-    }
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .social-text {
+    font-size: 1em;
+  }
+  .et_pb_bottom_inside_d {
+    background-size: 90% 30px;
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: auto;
+  }
 }
 
-@media screen and (min-width:515px) and (max-width:1220px) {
-    .title-web{
-        font-size: 2.5em;
-    }
-    .header-layout{
-        position:static;
-        height: 260px;
-    }
-    .header-box{
-        width: 85%;
-        height: 240px;
-        opacity: 1;
-        flex-direction: column;
-        position:static;
-    }
-    .general-menu{
-        font-size: 1.5em;
-        flex-wrap: nowrap;
-    }
-    .general-menu:hover{  
-        font-size: 2em;
-    }
-    .separation-header{
-        height: 0px;
-    }
-    .fruits-general{
-        height: 60px;
-    }
-    .vegetables-general{
-        height: 60px;
-    }
-    .img-general{
-        width: 90px;
-        height: 90px;
-    }
-    .title-section-fruits {
-        height: auto;
-        width: auto;
-        font-size: 2em;
-    }
-    .title-section-vegetables{
-        height: auto;
-        width: auto;
-        font-size: 2em;
-    }
-    .section-fruits {
-        height: auto;
-    }
-    .section-vegetables{
-        height: auto;
-    }
-    .fruit-container {
-        display:flex; 
-        
-    }
-    .type-fruit{
-        margin-top: 20px;
-        font-size: 2em;
-        width: 150px;
-    }
-    .type-vegetables{
-        margin-top: 20px;
-        font-size: 2em;
-        width: 150px;
-    }
-    .box1{
-        width:auto;
-        margin:5px;
-        padding: 5px;
-        font-size: 1em;
-    }
-    .box2{
-        width:auto;
-        margin:5px;
-        padding: 5px;
-        font-size: 1em;
-    }
-    .box3{
-        width:auto;
-        margin:1px;
-        padding: 2px;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .img-fruits, .img-vegetables{
-        width: 90px;
-        height: 90px;
-    }
-    .social-img{
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-    }
-    .social:hover{
-        width: 100px;
-        height: 100px;
-    }
-    .social-text{
-        font-size: 1.5em;
-    }
-    .et_pb_bottom_inside_d {
-        background-size: 90% 30px;
-        margin-top: 10px;
-        height: 30px;
-        margin-bottom: 5px;
-        width: auto;
-    }
+@media screen and (min-width: 515px) and (max-width: 1220px) {
+  .title-web {
+    font-size: 2.5em;
+  }
+  .header-layout {
+    position: static;
+    height: 260px;
+  }
+  .header-box {
+    width: 85%;
+    height: 240px;
+    opacity: 1;
+    flex-direction: column;
+    position: static;
+  }
+  .general-menu {
+    font-size: 1.5em;
+    flex-wrap: nowrap;
+  }
+  .general-menu:hover {
+    font-size: 2em;
+  }
+  .separation-header {
+    height: 0px;
+  }
+  .fruits-general {
+    height: 60px;
+  }
+  .vegetables-general {
+    height: 60px;
+  }
+  .img-general {
+    width: 90px;
+    height: 90px;
+  }
+  .title-section-fruits {
+    height: auto;
+    width: auto;
+    font-size: 2em;
+  }
+  .title-section-vegetables {
+    height: auto;
+    width: auto;
+    font-size: 2em;
+  }
+  .section-fruits {
+    height: auto;
+  }
+  .section-vegetables {
+    height: auto;
+  }
+  .fruit-container {
+    display: flex;
+  }
+  .type-fruit {
+    margin-top: 20px;
+    font-size: 2em;
+    width: 150px;
+  }
+  .type-vegetables {
+    margin-top: 20px;
+    font-size: 2em;
+    width: 150px;
+  }
+  .box1 {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+  }
+  .box2 {
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1em;
+  }
+  .box3 {
+    width: auto;
+    margin: 1px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .img-fruits,
+  .img-vegetables {
+    width: 90px;
+    height: 90px;
+  }
+  .social-img {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .social:hover {
+    width: 100px;
+    height: 100px;
+  }
+  .social-text {
+    font-size: 1.5em;
+  }
+  .et_pb_bottom_inside_d {
+    background-size: 90% 30px;
+    margin-top: 10px;
+    height: 30px;
+    margin-bottom: 5px;
+    width: auto;
+  }
 }
